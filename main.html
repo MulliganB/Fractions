@@ -1,0 +1,61 @@
+<html>
+  <body>
+    <!--linking accessory files-->
+    <link rel="stylesheet" href="./main.css"></link>
+    <!--end of link section-->
+
+    <div class="sumContainer">
+      <!--inputs-->
+      <div class="wrapper1">
+        <input type="text" ng-model="num1" id="num1"><br>
+        <hr><br>
+        <input type="text" ng-model="den1" id="den1">
+      </div>
+
+      <!--buttons for Sum type options-->
+      <div class="wrapper buttongrid">
+        <button onclick="add()" class="button1 square box" id="add">Add</button>
+        <button onclick="subtract()" class="button1 square box" id="subtract">Subtract</button>
+        <button onclick="multiply()" class="button1 square box" id="multiply">Multiply</button>
+        <button onclick="divide()" class="button1 square box" id="divide">Divide</button>
+      </div>
+      <br>
+      <!--end of buttons-->
+
+      <div class="wrapper1">
+        <input type="text" ng-model="num2" id="num2"><br>
+        <hr><br>
+        <input type="text" ng-model="den2"id="den2">
+      </div>
+      <!--end of inputs->
+
+      <!--Answer field-->
+      <h1 class="equals">=</h1>
+      <h1 id="answer" class="position"></h1>
+      <!--end of answer field-->
+    </div>
+      <!--Calculate button section-->
+      <button onclick="Fractions()" class="button">Calculate</button><br>
+      <!--end of section-->
+    <br>
+    <!--Simplify section-->
+    <div class="sumContainer">
+      <!--inputs-->
+      <div class="wrapper1 center">
+        <input type="text" name="num3" id="num3"><br>
+        <hr><br>
+        <input type="text" name="den3" id="den3">
+      </div>
+      <!--Answer field-->
+      <h1 class="equals">=</h1>
+      <h1 id="answer1" class="position"></h1>
+      <!--end of answer field-->
+    </div>
+    <br>
+    <button onclick="simplify()" class="button" id="simplify">Simplify</button>
+
+    <!--end of simplify section-->
+
+    <script src="./fractions.js"></script>
+  </body>
+</html>
